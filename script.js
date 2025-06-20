@@ -1,4 +1,6 @@
-
+function showNotification() {
+        alert("Welcome, HR Support User!\n\n        Thank you for choosing HR Support!");
+        }
   // Apply saved theme before styles load
   (function () {
     const theme = localStorage.getItem('theme') || 'light';
