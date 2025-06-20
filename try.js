@@ -8,13 +8,6 @@ function showPopup() {
 // Update footer year dynamically
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Show welcome notification
-    function showNotification() {
-      alert(
-        "Welcome, HR Support User!\nTo access 'Pin Your Issue' and 'Note', simply remove 'abc.html' from the URL and press Enter. Your data in 'Pin Your Issue' and 'Note' is secure and will not be lost. Thank you for choosing HR Support!"
-      );
-    }
-
     // Toggle popup visibility
     function togglePopup() {
       const popup = document.getElementById("myPopup");
