@@ -1,6 +1,6 @@
  // Show welcome notification
         function showNotification() {
-                       alert("Welcome HR Support User!,\n        You can pin your issue here, and it will stay saved even if you reload the page. Thank you for choosing HR Support!");
+                       alert("Welcome HR Support User!,\n        You can pin your issue here, and it will stay saved even if you reload or close the page. Thank you for choosing HR Support!");
         }
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
