@@ -142,7 +142,12 @@ header {
 .nav-links img {
     width: 40px;
 }
-
+    #timer {
+      font-size: 16px;
+      font-weight: bold;
+      color: white
+    
+    }
 /* Theme toggle button */
 #theme-toggle {
     padding: 0;
