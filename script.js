@@ -121,7 +121,7 @@
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       window.location.href = 'index.html'; // Redirect to lock screen after 10 mins
-    }, 0.10 * 60 * 1000); // 10 minutes in milliseconds
+    }, 15 * 60 * 1000); // 15 minutes in milliseconds
   }
 
   // Reset timer on any user interaction
