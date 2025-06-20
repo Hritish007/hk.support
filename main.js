@@ -20,3 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
     }
 });
+window.addEventListener("DOMContentLoaded", () => {
+    let seconds = 0;
+    const timerElement = document.getElementById("timer");
+
+    setInterval(() => {
+        seconds++;
+        const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+        const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+        const secs = String(seconds % 60).padStart(2, '0');
+        timerElement.textContent = `${hrs}:${mins}:${secs}`;
+    }, 1000);
+});
+
