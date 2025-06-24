@@ -123,7 +123,7 @@ function showNotification() {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       window.location.href = 'index.html'; // Redirect after 15 mins
-    }, 15 * 60 * 1000); // 15 minutes in milliseconds
+    }, 12 * 60 * 1000); // 15 minutes in milliseconds
   }
 
   // Reset timer on any user interaction
