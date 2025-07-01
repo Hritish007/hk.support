@@ -107,6 +107,7 @@
   <div class="step-subtitle">Connected at 2.4GHz</div>
   <div>Suggest Beacon/Secondary ONU also suggest reposition.</div>
   <div>✅ Ticket header: Bad RSSI or beyond 2.4GHz</div>
+    <div><b>REMARK: Device verified, initial ping not fine, range not fine (<= -65dBm), suggest secondary ONU and also suggest reposition.</b></div>
   <button class="btn btn-back" onclick="goBack()">Back</button>
 </div>
 
@@ -124,6 +125,7 @@
   <div class="step-subtitle">Connected at 5GHz</div>
   <div>Suggest to connect 2.4GHz, Secondary ONU also suggest reposition.</div>
   <div>✅ Ticket header: Beyond 5GHz</div>
+  <div><b>REMARK: Device verified, initial ping not fine, range not fine (<= -65dBm), suggest to connect 2.4GHz, secondary ONU and also suggest reposition.</b></div>
   <button class="btn btn-back" onclick="goBack()">Back</button>
 </div>
 
@@ -184,48 +186,32 @@
 
         <div class="step-container" id="step5">
           <div class="step-title">STEP 6</div>
-          <div class="step-subtitle">Domain ping fine</div>
-          <button class="btn" onclick="goToStep(100)">Issue solved</button>
-          <button class="btn" onclick="goToStep(101)">Not solved</button>
+          <div class="step-subtitle">Domain ping fine?</div>
+          <button class="btn" onclick="goToStep(1000)">Issue solved</button>
+          <button class="btn" onclick="goToStep(1001)">Not solved</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
 
         <div class="step-container" id="step55">
           <div class="step-title">STEP 6</div>
-          <div class="step-subtitle">Domain ping not fine</div>
-          <button class="btn" onclick="goToStep(100)">Issue solved</button>
-          <button class="btn" onclick="goToStep(101)">Not solved</button>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-        </div>
-
-        <div class="step-container" id="step100">
-          <div class="step-title">CONGRATULATIONS</div>
-          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
-          <div class="step-subtitle"><strong>✅TICKET: Close Under Related Header Of Speedtest Fine</strong></div>
-          <div><b>REMARK: device verified,range fine, ping test fine, speed test done, domain ping fine, issue resolved.</b></div>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-        </div>
-
-        <div class="step-container" id="step101">
-          <div class="step-title">STEP 7</div>
-          <div class="step-subtitle">Not solve?</div>
-          <div>✅ Ticket header:Close/Assign based on cases "speed test fine issue on certain app/website"</div>
+          <div class="step-subtitle">Domain ping not fine?</div>
+          <button class="btn" onclick="goToStep(100)">Not solved</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
         
         <!-- STEP 6 -->
 <div class="step-container" id="step77">
   <div class="step-title">STEP 6</div>
-  <div class="step-subtitle">OMCi profile</div>
-  <button class="btn" onclick="goToStep(777)">OMCi profile fine</button>
-  <button class="btn" onclick="goToStep(7777)">OMCi profile not fine</button>
+  <div class="step-subtitle">Check OMCi profile</div>
+  <button class="btn" onclick="goToStep(777)">OMCI profile fine</button>
+  <button class="btn" onclick="goToStep(7777)">OMCI profile not fine</button>
   <button class="btn btn-back" onclick="goBack()">Back</button>
 </div>
 
 <!-- STEP 7A -->
 <div class="step-container" id="step777">
   <div class="step-title">STEP 7</div>
-  <div class="step-subtitle">OMCi profile fine</div>
+  <div class="step-subtitle">OMCi profile fine?</div>
   <button class="btn" onclick="goToStep(601)">Single device connection and speedtest fine</button>
   <button class="btn" onclick="goToStep(701)">Single device connection and speedtest not fine</button>
   <button class="btn btn-back" onclick="goBack()">Back</button>
@@ -247,7 +233,7 @@
 <div class="step-container" id="step611">
           <div class="step-title">STEP 9</div>
           <div class="step-subtitle">Speed test fine</div>
-          <button class="btn" onclick="goToStep(100)">Solved</button>
+          <button class="btn" onclick="goToStep(10)">Solved</button>
           <button class="btn" onclick="goToStep(101)">Note Sloved</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
@@ -262,7 +248,7 @@
 <!-- STEP 7B -->
 <div class="step-container" id="step7777">
   <div class="step-title">STEP 7</div>
-  <div class="step-subtitle">OMCi profile not fine</div>
+  <div class="step-subtitle">OMCi profile not fine?</div>
   <button class="btn" onclick="goToStep(20)">Query on L2 Communication</button>
   <button class="btn btn-back" onclick="goBack()">Back</button>
 </div>
@@ -279,6 +265,7 @@
           <div class="step-title">CONGRATULATIONS</div>
           <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
           <div>✅ Ticket header:Close on the "Current bandwith is lower than subscription"</div>
+            <div><b>REMARK: Device verified, ping test fine, speed test not fine, omci profile not fine, omci profile matched, issue resolved.</b></div>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
         <div class="step-container" id="step202">
@@ -291,13 +278,13 @@
         <!-- STEP 3 -->
         <div class="step-container" id="step33">
           <div class="step-title">STEP 4</div>
-          <div class="step-subtitle">Ping Not Fine</div>
-          <button class="btn" onclick="goToStep(6001)">Another device ping</button>
+          <div class="step-subtitle">Ping not fine?</div>
+          <button class="btn" onclick="goToStep(6001)">Check another device ping</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
         <div class="step-container" id="step6001">
           <div class="step-title">STEP 5</div>
-          <div class="step-subtitle">Another device ping</div>
+          <div class="step-subtitle">Another device ping?</div>
           <button class="btn" onclick="goToStep(6002)">Ping fine</button>
           <button class="btn" onclick="goToStep(7002)">Ping not fine</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
@@ -305,28 +292,17 @@
         <div class="step-container" id="step6002">
           <div class="step-title">STEP 6</div>
           <div class="step-subtitle">Another device ping fine?</div>
-          <button class="btn" onclick="goToStep(702)">Reconnect on both devices</button>
+          <button class="btn" onclick="goToStep(702)">Reconnect Wi-Fi on first device</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
         <div class="step-container" id="step702">
           <div class="step-title">STEP 7</div>
-          <div class="step-subtitle">Reconnect on both devices?</div>
-          <button class="btn" onclick="goToStep(6024)">Solved</button>
+          <div class="step-subtitle">Reconnect Wi-Fi on first device?</div>
+          <button class="btn" onclick="goToStep(3024)">Solved</button>
           <button class="btn" onclick="goToStep(626)">Note Sloved</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
-        <div class="step-container" id="step6002">
-          <div class="step-title">CONGRATULATIONS</div>
-          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
-          <div>✅ Ticket header:Close on the "High Latency in a single device with good RSSI"</div>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-      </div>
-      <div class="step-container" id="step626">
-          <div class="step-title">STEP 8</div>
-          <div class="step-subtitle">Not solve?</div>
-          <div>✅ Ticket header:Assign on the "High Latency in a single device with good RSSI"</div>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-        </div>
+        
 
       <div class="step-container" id="step7002">
           <div class="step-title">STEP 6</div>
@@ -350,7 +326,7 @@
         <div class="step-container" id="step6008">
           <div class="step-title">STEP 8</div>
           <div class="step-subtitle">Channel interference not seen</div>
-          <button class="btn" onclick="goToStep(7012)">Reconnect on both devices</button>
+          <button class="btn" onclick="goToStep(7012)">Reconnect Wi-Fi on both devices</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
         <!-- STEP 3 -->
@@ -362,19 +338,7 @@
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
         
-        <div class="step-container" id="step6014">
-          <div class="step-title">CONGRATULATIONS</div>
-          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
-          <div>✅ Ticket header:Close on the "Channel interference/Channel interference in 5GHz"</div>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-      </div>
-
-      <div class="step-container" id="step6016">
-          <div class="step-title">STEP 10</div>
-          <div class="step-subtitle">Not solve?</div>
-          <div>✅ Ticket header:Assign on the "Channel interference/Channel interference in 5GHz"</div>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-        </div>
+        
 
         <div class="step-container" id="step7012">
           <div class="step-title">STEP 9</div>
@@ -383,18 +347,7 @@
           <button class="btn" onclick="goToStep(6026)">Note Sloved</button>
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
-        <div class="step-container" id="step6024">
-          <div class="step-title">CONGRATULATIONS</div>
-          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
-          <div>✅ Ticket header:Close on the "High Latency in a single device with good RSSI"</div>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-        </div>
-        <div class="step-container" id="step6026">
-          <div class="step-title">STEP 10</div>
-          <div class="step-subtitle">Not solve?</div>
-          <div>✅ Ticket header:Assign on the "High Latency in a single device with good RSSI"</div>
-      <button class="btn btn-back" onclick="goBack()">Back</button>
-        </div>
+        
 
         <!-- STEP 3 -->
         <div class="step-container" id="step5">
@@ -405,6 +358,86 @@
       <button class="btn btn-back" onclick="goBack()">Back</button>
         </div>
 
+        <!-- SOLVE/NOT SOLVE  SPEED TEST FINE , ISSUE ON -->
+        <div class="step-container" id="step1000">
+          <div class="step-title">CONGRATULATIONS</div>
+          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
+          <div class="step-subtitle"><strong>✅Ticket header: Close Under Related Header Of Speedtest Fine</strong></div>
+          <div><b>REMARK: Device verified,range fine (<= -65dBm), ping test fine, speed test fine, domain ping fine, issue resolved.</b></div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+        <div class="step-container" id="step100">
+          <div class="step-title">Step 7</div>
+          <div class="step-subtitle"><strong>✅Ticket header: Close Under Related Header Of Speedtest Fine</strong></div>
+          <div><b>REMARK: Device verified,range fine (<= -65dBm), ping test fine, speed test fine, domain ping not fine, suggested to check after awhile.</b></div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+        <div class="step-container" id="step1001">
+          <div class="step-title">STEP 7</div>
+          <div class="step-subtitle">Not solve?</div>
+          <div>✅ Ticket header:Close/Assign based on cases "speed test fine issue on certain app/website"</div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+
+          <!-- SOLVE/NOT SOLVE  Current bandwith is lower than subscription-->
+        <div class="step-container" id="step201">
+          <div class="step-title">CONGRATULATIONS</div>
+          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
+          <div>✅ Ticket header:Close on the "Current bandwith is lower than subscription"</div>
+            <div><b>REMARK: Device verified, ping test fine, speed test not fine, omci profile not fine, omci profile matched, issue resolved.</b></div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+        <div class="step-container" id="step202">
+          <div class="step-title">STEP 9</div>
+          <div class="step-subtitle">Not solve?</div>
+          <div>✅ Ticket header:Assign on the "Current bandwith is lower than subscription"</div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+
+<!-- SOLVE/NOT SOLVE  HIGH LATENCY -->
+        <div class="step-container" id="step3024">
+          <div class="step-title">CONGRATULATIONS</div>
+          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
+          <div>✅ Ticket header:Close on the "High Latency in a single device with good RSSI"</div>
+          <div><b>REMARK: Device verified, range fine (<= -65dBm), initial ping not fine, another device ping fine, reconnected Wi-Fi on first device, issue solved..</b></div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+      </div>
+      <div class="step-container" id="step626">
+          <div class="step-title">STEP 8</div>
+          <div class="step-subtitle">Not solve?</div>
+          <div>✅ Ticket header:Assign on the "High Latency in a single device with good RSSI"</div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+
+        <!-- SOLVE/NOT SOLVE  HIGH LATENCY  (Interference not Seen) -->
+        <div class="step-container" id="step6024">
+          <div class="step-title">CONGRATULATIONS</div>
+          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
+          <div>✅ Ticket header:Close on the "High Latency in a single device with good RSSI"</div>
+          <div><b>REMARK: Device verified, range fine (<= -65dBm), initial ping not fine, another device ping not fine, channel interference not seen, reconnected WiFi both devices, issue solved.</b></div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+        <div class="step-container" id="step6026">
+          <div class="step-title">STEP 10</div>
+          <div class="step-subtitle">Not solve?</div>
+          <div>✅ Ticket header:Assign on the "High Latency in a single device with good RSSI"</div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
+
+      <!-- SOLVE/NOT SOLVE  CHANNEL INTERFERENCE SEEN-->
+        <div class="step-container" id="step6014">
+          <div class="step-title">CONGRATULATIONS</div>
+          <div class="step-subtitle"><strong>You followed all troubleshoot procedures according to the checklist.</strong></div>
+          <div>✅ Ticket header:Close on the "Channel interference/Channel interference in 5GHz"</div>
+          <div><b>REMARK: Device verified, range fine (<= -65dBm), initial ping not fine, another device ping not fine, channel interference seen, channel changed, issue solved.</b></div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+      </div>
+      <div class="step-container" id="step6016">
+          <div class="step-title">STEP 10</div>
+          <div class="step-subtitle">Not solve?</div>
+          <div>✅ Ticket header:Assign on the "Channel interference/Channel interference in 5GHz"</div>
+      <button class="btn btn-back" onclick="goBack()">Back</button>
+        </div>
 
 <script>
   const stepHistory = [];
